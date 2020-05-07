@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>發生了非預期錯誤</h1>
+    <p>已通知系統管理員，很抱歉造成您的不便!</p>
+    <p><a href="{{ url_for('index') }}">返回主頁</a></p>
+{% endblock %}

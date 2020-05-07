@@ -1,0 +1,25 @@
+2020-05-08 00:03:30,301 INFO: Microblog starup [in C:\Users\TanziAI\Documents\WEB\flask_website\app\__init__.py:47
+2020-05-08 00:04:08,018 ERROR: Exception on /edit_profile [GET] [in c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py:1891
+Traceback (most recent call last):
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\TanziAI\Documents\WEB\flask_website\app\routes.py", line 75, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "c:\users\tanziai\.conda\envs\flaskenv\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\TanziAI\Documents\WEB\flask_website\app\forms.py", line 37, in __init__
+    super(EditProfileForm, self).init(*args, **kwargs)
+AttributeError: 'super' object has no attribute 'init'
+2020-05-08 00:05:40,826 INFO: Microblog starup [in C:\Users\TanziAI\Documents\WEB\flask_website\app\__init__.py:47
